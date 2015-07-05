@@ -8,8 +8,10 @@ class ProjectsController < ApplicationController
     @skill = Skill.find(params[:skill_id])
     @project = @skill.projects.new(project_params)
     if @project.save
+      flash[:notice] = "Project has been added!"
       redirect_to skill_path(@project.skill)
     else
+      flash[:alert] = "Errors detected!"
       render :new
     end
   end
@@ -28,8 +30,10 @@ class ProjectsController < ApplicationController
     @skill = Skill.find(params[:skill_id])
     @project = Project.find(params[:id])
     if @project.update(project_params)
+      flash[:notice] = "Project has been updated!"
       redirect_to skill_project_path
     else
+      flash[:alert] = "Errors detected!"
       render :edit
     end
   end
