@@ -2,10 +2,26 @@
 
 <h3>Description: <%= @skill.description %></h3>
 
-<p><%= link_to "Edit this Skill", edit_skill_path %></p>
+<% if @skill.projects.any? %>
+  <h3>The projects I have completed in <%= @skill.name %> are:</h3>
+  <ul>
+    <% @skill.projects.each do |project| %>
+      <li><%= link_to project.name, skill_project_path(@skill, project) %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>There are no projects yet!</p>
+<% end %>
 
+
+
+
+
+<p><%= link_to "Return to Skills list", skills_path %></p>
+
+<h3>Admin Tools</h3>
+<p><%= link_to "Add a Project to this Skill", new_skill_project_path(@skill) %></p>
+<p><%= link_to "Edit this Skill", edit_skill_path %></p>
 <p><%= link_to "Delete this Skill", skill_path(@skill),
                                     :data => {:confirm => "Confirm Delete",
                                     :method => "delete"} %></p>
-
-<p><%= link_to "Return to Skills list", skills_path %></p>
