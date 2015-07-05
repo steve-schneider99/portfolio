@@ -1,7 +1,21 @@
 <h1>Steve's Portfolio</h1>
 
+<h3>Personal Information</h3>
+<ul>
+  <li>Phone: 928-451-4148</li>
+  <li>Email: steve.schneider99@gmail.com</li>
+  <li>Current City: Portland, OR</li>
+  <li><a href="https://github.com/steve-schneider99">Github Profile</a></li>
+</ul>
+
+<h3>Steve's Skills</h3>
+
 <ul>
   <% @skills.each do |skill| %>
-    <li><%= skill.name %></li>
+    <li><%= link_to skill.name, skill_path(skill)%></li>
     <% end %>
 </ul>
+
+<p>
+  <a href="skills/new">Add a new Skill</a>
+</p>
