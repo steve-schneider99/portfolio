@@ -1,6 +1,7 @@
 class SkillsController < ApplicationController
   def index
     @skills = Skill.all
+    @blogs = Blog.all
   end
 
   def show
