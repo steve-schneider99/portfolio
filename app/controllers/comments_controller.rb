@@ -15,7 +15,7 @@ class CommentsController < ApplicationController
 
   def create
     @blog = Blog.find(params[:blog_id])
-    @comment = Comment.new(comment_params)
+    @comment = @blog.comments.new(comment_params)
     if @comment.save
       flash[:notice] = "comment has been posted."
       redirect_to blog_path(@blog)
@@ -27,7 +27,7 @@ class CommentsController < ApplicationController
 
   private
     def comment_params
-      params.require(:comment).permit(:comment, :user_email, :user_id, :blog_id)
+      params.require(:comment).permit(:comment, :user_email, :user_id, :blog_id, :timestamp)
     end
 
 end
