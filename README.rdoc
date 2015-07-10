@@ -2,7 +2,7 @@
 
 This is my portfolio that is to be shown to prospective employers. It contains the various skills I am proficient in, as well as projects that I have completed in those skill sets. It also contains a blog where I can post status updates, and also allows comments for users that have registered on my site.
 
-Run the following code to start this project:
+== Run the following code to start this project:
 
 git clone https://github.com/steve-schneider99/portfolio.git
 bundle
@@ -12,8 +12,10 @@ rails s
 
 Navigate in your browser to "localhost:3000' to see the site.
 
-* Ruby version
+== Ruby version
   Rails version - 4.2.3
+
+== Liscensing Info
 
 This is free and unencumbered software released into the public domain.
 
