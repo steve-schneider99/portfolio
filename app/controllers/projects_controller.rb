@@ -2,6 +2,10 @@ class ProjectsController < ApplicationController
   def new
     @skill = Skill.find(params[:skill_id])
     @project = @skill.projects.new
+    if current_user == nil || current_user.email != "steve.schneider99@gmail.com"
+      flash[:alert] = "Not authorized! Please sign in!"
+      redirect_to skills_path
+    end
   end
 
   def create
@@ -24,6 +28,10 @@ class ProjectsController < ApplicationController
   def edit
     @skill = Skill.find(params[:skill_id])
     @project = Project.find(params[:id])
+    if current_user == nil || current_user.email != "steve.schneider99@gmail.com"
+      flash[:alert] = "Not authorized! Please sign in!"
+      redirect_to skills_path
+    end
   end
 
   def update
@@ -44,12 +52,6 @@ class ProjectsController < ApplicationController
     @project.destroy
     redirect_to skill_path
   end
-
-
-
-
-
-
 
 private
   def project_params

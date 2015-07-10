@@ -10,6 +10,11 @@ class SkillsController < ApplicationController
 
   def new
     @skill = Skill.new
+    if current_user == nil || current_user.email != "steve.schneider99@gmail.com"
+      flash[:alert] = "Not authorized!"
+      redirect_to skills_path
+    end
+
   end
 
   def create
@@ -25,6 +30,10 @@ class SkillsController < ApplicationController
 
   def edit
     @skill = Skill.find(params[:id])
+    if current_user == nil || current_user.email != "steve.schneider99@gmail.com"
+      flash[:alert] = "Not authorized!"
+      redirect_to skills_path
+    end
   end
 
   def update

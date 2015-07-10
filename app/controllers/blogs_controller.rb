@@ -5,6 +5,10 @@ class BlogsController < ApplicationController
 
   def new
     @blog = Blog.new
+    if current_user == nil || current_user.email != "steve.schneider99@gmail.com"
+      flash[:alert] = "Not authorized! Please sign in!"
+      redirect_to skills_path
+    end
   end
 
   def create
@@ -20,6 +24,14 @@ class BlogsController < ApplicationController
 
   def show
     @blog = Blog.find(params[:id])
+  end
+
+  def edit
+    @blog = blog.find(params[:id])
+    if current_user == nil || current_user.email != "steve.schneider99@gmail.com"
+      flash[:alert] = "Not authorized! Please sign in!"
+      redirect_to skills_path
+    end
   end
 
 private
