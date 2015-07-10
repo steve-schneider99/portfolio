@@ -13,15 +13,16 @@
   <p>There are no projects yet!</p>
 <% end %>
 
-
-
-
-
 <p><%= link_to "Return to Skills list", skills_path %></p>
 
-<h3>Admin Tools</h3>
-<p><%= link_to "Add a Project to this Skill", new_skill_project_path(@skill) %></p>
-<p><%= link_to "Edit this Skill", edit_skill_path %></p>
-<p><%= link_to "Delete this Skill", skill_path(@skill),
-                                    :data => {:confirm => "Confirm Delete",
-                                    :method => "delete"} %></p>
+<% if current_user == nil %>
+<% else %>
+  <% if  current_user.email == "steve.schneider99@gmail.com" %>
+    <h3>Admin Tools</h3>
+    <p><%= link_to "Add a Project to this Skill", new_skill_project_path(@skill) %></p>
+    <p><%= link_to "Edit this Skill", edit_skill_path %></p>
+    <p><%= link_to "Delete this Skill", skill_path(@skill),
+                                        :data => {:confirm => "Confirm Delete",
+                                        :method => "delete"} %></p>  
+  <% end %>
+<% end %>

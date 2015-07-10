@@ -16,6 +16,13 @@
     <% end %>
 </ul>
 
-<p><a href="skills/new">Add a new Skill</a></p>
+
+<% if current_user == nil %>
+<% else %>  
+  <% if  current_user.email == "steve.schneider99@gmail.com" %>
+    <%= link_to "Add a new skill", new_skill_path %>
+  <% end %>
+<% end %>
+
 
 <%= render 'blogs/index' %>

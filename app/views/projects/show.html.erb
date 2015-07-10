@@ -1,4 +1,4 @@
-<h1>Project details for <%= @project.name %></h1>
+<h1>Details for <%= @project.name %></h1>
 
 <h3>Description: <%= @project.description %></h3>
 
@@ -6,10 +6,13 @@
 
 <p><%= link_to 'Return to Skill', skill_path(@skill) %></p>
 
-
-
-<h3>Admin Tools</h3>
-<p><%= link_to "Edit this Project", edit_skill_project_path %></p>
-<p><%= link_to "Delete this Project", skill_project_path(@skill, @project),
-                                    :data => {:confirm => "Confirm Delete",
-                                    :method => "delete"} %></p>
+<% if current_user == nil %>
+<% else %>
+  <% if  current_user.email == "steve.schneider99@gmail.com" %>
+    <h3>Admin Tools</h3>
+    <p><%= link_to "Edit this Project", edit_skill_project_path %> |
+       <%= link_to "Delete this Project", skill_project_path(@skill, @project),
+                                        :data => {:confirm => "Confirm Delete",
+                                        :method => "delete"} %></p>
+  <% end %>
+<% end %>

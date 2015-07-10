@@ -1,11 +1,19 @@
 <h3>Steve's Blog Posts:</h3>
 <h4>See all of my status updates below:</h4>
 
+<% if current_user == nil %>
+<% else %>
+  <% if current_user.email == "steve.schneider99@gmail.com" %>
+    <%= link_to "Add a new blog post", new_blog_path %>
+  <% end %>
+<% end %>
+
 
 <ul>
   <% if @blogs.any? %>
     <% @blogs.each do |blog| %>
-      <li><%= blog.category %> | <%= blog.post %></li>
+      <li><%= blog.category %> | <%= blog.timestamp %></li>
+      <li><%= blog.post %></li>
     <% end %>
 </ul>
   <% else %>
