@@ -1,11 +1,12 @@
 <ul>
   <% if @comments.any? %>
-    <% @blogs.each do |blog| %>
-      <li><%= blog.category %> | <%= blog.timestamp %></li>
-      <li><%= blog.post %></li>
-      <%= link_to "View/Add Comments", blog_path(blog) %>
+    <% @comments.each do |comment| %>
+      <li><i><%= comment.comment %></i><br>
+      Posted by: <%= comment.user_email %></li>
     <% end %>
 </ul>
   <% else %>
-    <p>There are no blog posts...yet!</p>
+    <p>There are no comments on this blog.</p>
   <% end %>
+
+<%= link_to "Add a new comment", new_blog_comment_path(@blog) %>
