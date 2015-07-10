@@ -2,6 +2,11 @@ class CommentsController < ApplicationController
   def new
     @blog = Blog.find(params[:blog_id])
     @comment = Comment.new
+    if current_user == nil
+      flash[:alert] = "Please login to post a comment!"
+      redirect_to blog_path(@blog)
+    else
+    end
   end
 
   def show
