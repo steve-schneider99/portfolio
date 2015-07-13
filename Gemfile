@@ -1,13 +1,13 @@
 source 'https://rubygems.org'
-  gem 'rails',
+  gem 'rails'
   gem 'pg'
-  gem 'sass-rails', 
-  gem 'uglifier', 
-  gem 'coffee-rails', 
+  gem 'sass-rails'
+  gem 'uglifier'
+  gem 'coffee-rails'
   gem 'jquery-rails'
   gem 'turbolinks'
-  gem 'jbuilder',
-  gem 'sdoc',
+  gem 'jbuilder'
+  gem 'sdoc'
   gem 'spring'
   gem 'quiet_assets'
   gem 'rspec-rails'
