@@ -21,8 +21,6 @@ source 'https://rubygems.org'
   gem 'simplecov', require: false
   gem 'letter_opener'
   gem 'paperclip'
-
-group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
-end
+
