@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+group :development do
   gem 'rails'
   gem 'pg'
   gem 'sass-rails'
@@ -23,4 +24,4 @@ source 'https://rubygems.org'
   gem 'paperclip'
   gem 'byebug'
   gem 'web-console'
-
+end
