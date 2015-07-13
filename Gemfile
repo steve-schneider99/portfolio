@@ -23,5 +23,4 @@ source 'https://rubygems.org'
   gem 'paperclip'
   gem 'byebug'
   gem 'web-console'
-end
 
