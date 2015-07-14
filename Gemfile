@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-group :development do
+group :production do
   gem 'rails'
   gem 'pg'
   gem 'sass-rails'
@@ -24,8 +24,6 @@ group :development do
   gem 'paperclip'
   gem 'byebug'
   gem 'web-console'
+  gem 'rails_12factor'
 end
-
-gem 'rails_12factor', group: :production
-
 ruby "2.2.0"
