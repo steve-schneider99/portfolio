@@ -2,7 +2,7 @@
 
 This is my portfolio that is to be shown to prospective employers. It contains the various skills I am proficient in, as well as projects that I have completed in those skill sets. It also contains a blog where I can post status updates, and also allows comments for users that have registered on my site.
 
-Link to site on Heroku: https://portfolio-steve.herokuapp.com/
+Link to site on Heroku: https://serieux-saucisson-3865.herokuapp.com/
 
 == Run the following code to start this project:
 
