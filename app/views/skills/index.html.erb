@@ -16,13 +16,15 @@
     <% end %>
 </ul>
 
-
 <% if current_user == nil %>
-<% else %>  
+<% else %>
   <% if  current_user.email == "steve.schneider99@gmail.com" %>
     <%= link_to "Add a new skill", new_skill_path %>
   <% end %>
 <% end %>
+
+<h3>References</h3>
+<%= link_to "See References", references_path, class: "btn btn-primary", id: "new_ref_link", remote: true %>
 
 
 <%= render 'blogs/index' %>
