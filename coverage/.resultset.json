@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Guest/Desktop/portoflio/spec/features/add_skill_pages_spec.rb": [
+      "/Users/steve/Desktop/portfolio/spec/features/add_skill_pages_spec.rb": [
         1,
         null,
         1,
@@ -19,7 +19,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/portoflio/spec/rails_helper.rb": [
+      "/Users/steve/Desktop/portfolio/spec/rails_helper.rb": [
         null,
         1,
         1,
@@ -71,14 +71,14 @@
         1,
         null
       ],
-      "/Users/Guest/Desktop/portoflio/config/environment.rb": [
+      "/Users/steve/Desktop/portfolio/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/Guest/Desktop/portoflio/config/application.rb": [
+      "/Users/steve/Desktop/portfolio/config/application.rb": [
         1,
         null,
         1,
@@ -115,12 +115,12 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/portoflio/config/boot.rb": [
+      "/Users/steve/Desktop/portfolio/config/boot.rb": [
         1,
         null,
         1
       ],
-      "/Users/Guest/Desktop/portoflio/config/environments/test.rb": [
+      "/Users/steve/Desktop/portfolio/config/environments/test.rb": [
         1,
         null,
         null,
@@ -164,7 +164,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/portoflio/config/initializers/assets.rb": [
+      "/Users/steve/Desktop/portfolio/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -177,7 +177,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/portoflio/config/initializers/backtrace_silencers.rb": [
+      "/Users/steve/Desktop/portfolio/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -186,12 +186,12 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/portoflio/config/initializers/cookies_serializer.rb": [
+      "/Users/steve/Desktop/portfolio/config/initializers/cookies_serializer.rb": [
         null,
         null,
         1
       ],
-      "/Users/Guest/Desktop/portoflio/config/initializers/devise.rb": [
+      "/Users/steve/Desktop/portfolio/config/initializers/devise.rb": [
         null,
         null,
         1,
@@ -455,13 +455,13 @@
         1,
         null
       ],
-      "/Users/Guest/Desktop/portoflio/config/initializers/filter_parameter_logging.rb": [
+      "/Users/steve/Desktop/portfolio/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/Users/Guest/Desktop/portoflio/config/initializers/inflections.rb": [
+      "/Users/steve/Desktop/portfolio/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -479,18 +479,18 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/portoflio/config/initializers/mime_types.rb": [
+      "/Users/steve/Desktop/portfolio/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/Users/Guest/Desktop/portoflio/config/initializers/session_store.rb": [
+      "/Users/steve/Desktop/portfolio/config/initializers/session_store.rb": [
         null,
         null,
         1
       ],
-      "/Users/Guest/Desktop/portoflio/config/initializers/wrap_parameters.rb": [
+      "/Users/steve/Desktop/portfolio/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -506,7 +506,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/portoflio/spec/factories.rb": [
+      "/Users/steve/Desktop/portfolio/spec/factories.rb": [
         2,
         null,
         null,
@@ -516,7 +516,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/portoflio/config/routes.rb": [
+      "/Users/steve/Desktop/portfolio/config/routes.rb": [
         1,
         1,
         1,
@@ -527,41 +527,28 @@
         null,
         1,
         1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/steve/Desktop/portfolio/app/models/user.rb": [
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
         null,
         null,
         null
       ],
-      "/Users/Guest/Desktop/portoflio/app/models/user.rb": [
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/Guest/Desktop/portoflio/app/helpers/application_helper.rb": [
+      "/Users/steve/Desktop/portfolio/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/Guest/Desktop/portoflio/spec/models/blog_spec.rb": [
-        1,
-        null,
-        1,
-        2,
-        2,
-        2,
-        null
-      ],
-      "/Users/Guest/Desktop/portoflio/app/models/blog.rb": [
-        1,
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/Guest/Desktop/portoflio/spec/models/comment_spec.rb": [
+      "/Users/steve/Desktop/portfolio/spec/models/blog_spec.rb": [
         1,
         null,
         1,
@@ -570,33 +557,14 @@
         2,
         null
       ],
-      "/Users/Guest/Desktop/portoflio/app/models/comment.rb": [
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/Guest/Desktop/portoflio/spec/models/project_spec.rb": [
-        1,
-        null,
-        1,
-        2,
-        2,
-        2,
-        2,
-        null
-      ],
-      "/Users/Guest/Desktop/portoflio/app/models/project.rb": [
-        1,
+      "/Users/steve/Desktop/portfolio/app/models/blog.rb": [
         1,
         1,
         1,
         1,
         null
       ],
-      "/Users/Guest/Desktop/portoflio/spec/models/skill_spec.rb": [
+      "/Users/steve/Desktop/portfolio/spec/models/comment_spec.rb": [
         1,
         null,
         1,
@@ -605,21 +573,74 @@
         2,
         null
       ],
-      "/Users/Guest/Desktop/portoflio/app/models/skill.rb": [
+      "/Users/steve/Desktop/portfolio/app/models/comment.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/steve/Desktop/portfolio/spec/models/project_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "/Users/steve/Desktop/portfolio/app/models/project.rb": [
+        1,
         1,
         1,
         1,
         1,
         null
       ],
-      "/Users/Guest/Desktop/portoflio/spec/models/user_spec.rb": [
+      "/Users/steve/Desktop/portfolio/spec/models/reference_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "/Users/steve/Desktop/portfolio/app/models/reference.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/steve/Desktop/portfolio/spec/models/skill_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null
+      ],
+      "/Users/steve/Desktop/portfolio/app/models/skill.rb": [
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/steve/Desktop/portfolio/spec/models/user_spec.rb": [
         1,
         null,
         1,
         null,
         null
       ],
-      "/Users/Guest/Desktop/portoflio/app/controllers/skills_controller.rb": [
+      "/Users/steve/Desktop/portfolio/app/controllers/skills_controller.rb": [
         1,
         1,
         2,
@@ -686,7 +707,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/portoflio/app/controllers/application_controller.rb": [
+      "/Users/steve/Desktop/portfolio/app/controllers/application_controller.rb": [
         1,
         null,
         null,
@@ -703,6 +724,6 @@
         null
       ]
     },
-    "timestamp": 1436558880
+    "timestamp": 1437172444
   }
 }

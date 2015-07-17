@@ -6,7 +6,7 @@ class ReferencesController < ApplicationController
   def create
     @reference = Reference.create(reference_params)
     respond_to do |format|
-      format.html { redirect_to skills_url }
+      format.html { redirect_to skills_path }
       format.js
     end
   end

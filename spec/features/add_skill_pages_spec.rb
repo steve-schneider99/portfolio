@@ -8,8 +8,8 @@ describe "the add a skill process" do
     fill_in 'Password', :with => 'password'
     click_on 'Log in'
     visit new_skill_path
-    fill_in 'name', :with => 'test skill'
-    fill_in 'description', :with => 'test description'
+    fill_in 'skill_name', :with => 'test skill'
+    fill_in 'skill_description', :with => 'test description'
     click_on 'Create Skill'
     expect(page).to have_content('test skill')
   end
