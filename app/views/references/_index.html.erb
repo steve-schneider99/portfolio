@@ -1,18 +1,15 @@
-<h3>References:</h3>
 
 <% if @references.any? %>
-
   <ul id="reference_list">
     <% @references.each do |reference| %>
       <li><%= reference.comment%><br>
-          <i>Posted by: <%= reference.user.username %>, <%= reference.relation %></i>
+          <i>Posted by: <%= reference.user_id %>, <%= reference.relation %></i>
       </li>
       <% end %>
+<%= link_to "Add a new reference", new_reference_path, class: "btn btn-primary", id: "show_ref_form", remote: true %>
+<%= link_to "Close References", skills_path, class: "btn btn-primary", id: "close_ref_link", remote: true %>
   </ul>
 
 <% else %>
     <p>"There are no references yet! Add some below!"</p>
 <% end %>
-
-<%= link_to "Add a new reference", new_reference_path, class: "btn btn-primary", id: "show_ref_form", remote: true %>
-<!-- # <%= link_to "Close References", skills_path, class: "btn btn-primary", id: "close_ref_window", remote: true %> -->

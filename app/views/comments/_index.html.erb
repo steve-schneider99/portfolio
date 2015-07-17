@@ -5,10 +5,10 @@
       <li><i><%= comment.comment %></i><br>
       Posted by: <%= comment.user_email %></li>
     <% end %>
+</div>
 </ul>
   <% else %>
     <p>There are no comments on this blog.</p>
   <% end %>
-</div>
 
 <%= link_to "Add a new comment", new_blog_comment_path(@blog), id: "new_blog_comment", remote: true %>
