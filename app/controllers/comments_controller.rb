@@ -18,10 +18,16 @@ class CommentsController < ApplicationController
     @comment = @blog.comments.new(comment_params)
     if @comment.save
       flash[:notice] = "comment has been posted."
-      redirect_to blog_path(@blog)
+      respond_to do |format|
+        format.html { redirect_to blog_path(@blog)}
+        format.js
+      end
     else
       flash[:alert] = "Error posting comment - try again."
-      render :new
+      respond_to do |format|
+        format.html { render :new }
+        format.js
+      end
     end
   end
 

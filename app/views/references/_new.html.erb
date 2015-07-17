@@ -1,0 +1,13 @@
+<% if current_user == nil %>
+  <p>"Please log in to leave a reference!"</p>
+<% else %>
+<h3>Add a new reference below:</h3>
+
+  <%= form_for @reference do |f| %>
+    <%= f.label "Leave a reference here" %>
+    <%= f.text_field :comment %>
+    <%= f.label "How do you know Steve?" %>
+    <%= f.text_field :relation %>
+    <%= f.submit %>
+  <% end %>
+<% end %>

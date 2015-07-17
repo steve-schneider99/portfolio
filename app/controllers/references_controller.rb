@@ -1,21 +1,18 @@
 class ReferencesController < ApplicationController
   def index
     @references = Reference.all
-    @reference = Reference.new
-
   end
 
   def create
-    @reference = current_user.references.new(reference_params)
-    if @reference.save
-      respond_to do |format|
-        format.html { redirect_to skills_path }
-        format.js
-      end
-    else
-      flash[:alert] = "Error posting reference - try again."
-      render :index
+    @reference = Reference.create(reference_params)
+    respond_to do |format|
+      format.html { redirect_to references_url }
+      format.js
     end
+  end
+
+  def new
+    @reference = Reference.new
   end
 
 private

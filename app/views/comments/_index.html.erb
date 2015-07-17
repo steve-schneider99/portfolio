@@ -1,4 +1,5 @@
 <ul>
+<div id="comments_list">
   <% if @comments.any? %>
     <% @comments.each do |comment| %>
       <li><i><%= comment.comment %></i><br>
@@ -8,5 +9,6 @@
   <% else %>
     <p>There are no comments on this blog.</p>
   <% end %>
+</div>
 
-<%= link_to "Add a new comment", new_blog_comment_path(@blog) %>
+<%= link_to "Add a new comment", new_blog_comment_path(@blog), id: "new_blog_comment", remote: true %>
