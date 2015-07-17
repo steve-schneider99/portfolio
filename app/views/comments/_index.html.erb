@@ -1,11 +1,9 @@
-<ul>
-<div id="comments_list">
+<ul id="comments_list">
   <% if @comments.any? %>
     <% @comments.each do |comment| %>
       <li><i><%= comment.comment %></i><br>
       Posted by: <%= comment.user_email %></li>
     <% end %>
-</div>
 </ul>
   <% else %>
     <p>There are no comments on this blog.</p>
