@@ -1,29 +1,40 @@
 source 'https://rubygems.org'
-group :production do
-  gem 'rails'
-  gem 'pg'
-  gem 'sass-rails'
-  gem 'uglifier'
-  gem 'coffee-rails'
-  gem 'jquery-rails'
-  gem 'turbolinks'
-  gem 'jbuilder'
-  gem 'sdoc'
+
+gem 'rails'
+gem 'pg'
+gem 'sass-rails'
+gem 'bootstrap-sass'
+gem 'bootstrap_form'
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.1.0'
+gem 'jquery-rails'
+gem 'turbolinks'
+gem 'bcrypt-ruby', require: 'bcrypt'
+gem 'pry'
+gem 'pry-rails'
+gem 'letter_opener'
+gem 'devise'
+gem 'paperclip'
+gem 'jbuilder'
+gem 'sdoc'
+gem 'rails_12factor'
+
+
+group :development do
+  gem 'byebug'
+  gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'quiet_assets'
+end
+
+group :test, :development do
   gem 'rspec-rails'
   gem 'launchy'
-  gem 'pry'
+end
+
+group :test do
   gem 'shoulda-matchers'
   gem 'capybara'
-  gem 'bootstrap-sass'
-  gem 'devise'
   gem 'factory_girl_rails'
   gem 'simplecov', require: false
-  gem 'letter_opener'
-  gem 'paperclip'
-  gem 'byebug'
-  gem 'web-console'
-  gem 'rails_12factor'
 end
-ruby "2.2.0"
